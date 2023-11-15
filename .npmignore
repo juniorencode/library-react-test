@@ -1,6 +1,10 @@
-.babelrc
-.eslintignore
-.eslintrc
-.gitignore
-config
+node_modules
 src
+.babelrc
+.gitignore
+.npmignore
+index.html
+package-lock.json
+package.json
+README.md
+webpack.config.js
