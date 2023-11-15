@@ -4,7 +4,4 @@ src
 .gitignore
 .npmignore
 index.html
-package-lock.json
-package.json
-README.md
 webpack.config.js

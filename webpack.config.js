@@ -26,7 +26,10 @@ module.exports = (_, { mode }) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: isProduction ? './index.js' : './main.js',
-      publicPath: '/'
+      publicPath: '/',
+      library: 'library-react-test',
+      libraryTarget: 'umd',
+      umdNamedDefine: true
     },
     resolve: {
       extensions: ['.js', '.jsx']
