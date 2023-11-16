@@ -6,7 +6,7 @@ const Heading = ({ children }) => {
 }
 
 Heading.propTypes = {
-  children: PropTypes.any
+  children: PropTypes.node
 }
 
 export { Heading }

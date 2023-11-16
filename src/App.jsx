@@ -9,7 +9,9 @@ const App = () => {
   return (
     <div>
       <Heading>Ejemplo de Componente Button</Heading>
-      <Button text="Haz clic aquí" onClick={handleClick} type="button" />
+      <Button onClick={handleClick} type="button">
+        Haz clic aquí
+      </Button>
     </div>
   )
 }
