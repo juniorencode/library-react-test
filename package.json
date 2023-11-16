@@ -5,9 +5,14 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "format": "prettier --write ."
   },
-  "keywords": [],
+  "keywords": [
+    "library",
+    "ui",
+    "components"
+  ],
   "author": "Carlos Junior Ramos Vásquez",
   "license": "ISC",
   "devDependencies": {
@@ -18,9 +23,16 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.8.1",
     "css-minimizer-webpack-plugin": "^5.0.1",
+    "eslint": "^8.53.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
+    "prettier": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "terser-webpack-plugin": "^5.3.9",

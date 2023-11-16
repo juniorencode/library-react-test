@@ -1,7 +1,11 @@
 node_modules
 src
 .babelrc
+.eslintignore
+.eslintrc
 .gitignore
 .npmignore
+.prettierignore
+.prettierrc
 index.html
 webpack.config.js

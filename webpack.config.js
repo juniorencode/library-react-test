@@ -1,25 +1,25 @@
-const path = require('path');
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 const optimization = {
   minimize: true,
   minimizer: [new CssMinimizerPlugin(), new TerserPlugin()]
-};
+}
 
 const devServer = {
   static: { directory: path.join(__dirname, 'dist') },
   compress: true,
   port: 3002
   // open: true
-};
+}
 
 module.exports = (_, { mode }) => {
-  const isProduction = mode === 'production';
+  const isProduction = mode === 'production'
 
   return {
     entry: isProduction ? './src/index.js' : './src/main.jsx',
@@ -82,5 +82,5 @@ module.exports = (_, { mode }) => {
     ],
     optimization: isProduction ? optimization : {},
     devServer: !isProduction ? devServer : {}
-  };
-};
+  }
+}
