@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+import React from 'react'
 import PropTypes from 'prop-types'
 import './Button.css'
 
@@ -15,4 +17,4 @@ Button.propTypes = {
   onClick: PropTypes.func
 }
 
-export { Button }
+export default Button

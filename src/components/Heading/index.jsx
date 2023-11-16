@@ -1,3 +1,5 @@
+// eslint-disable-next-line
+import React from 'react'
 import PropTypes from 'prop-types'
 import './Heading.css'
 
@@ -9,4 +11,4 @@ Heading.propTypes = {
   children: PropTypes.node
 }
 
-export { Heading }
+export default Heading

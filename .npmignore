@@ -1,5 +1,7 @@
+dist
 node_modules
-src
+src/App.jsx
+src/main.jsx
 .babelrc
 .eslintignore
 .eslintrc
